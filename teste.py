@@ -36,7 +36,8 @@ def enviar_msg(MENSAGEM):
     send= driver.find_element_by_xpath(SEND_BUTTON)
     send.click()
     
-df = pd.read_excel("exemplo_excel.xlsx")
+df = pd.read_excel(r"C:\Users\Dell\Downloads\exemplo_excel.xlsx")
+##Change File Path before the execution
 nomes_palavras_chaves = df.Contato
 lista_mensagens = df.Mensagem
 
